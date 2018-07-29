@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="test_linq_2_tablas" Class="TestLinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=test_linq_2_tablas;Persist Security Info=True;User ID=sa" SettingsObjectName="Test_LINQ_2_tablas.Properties.Settings" SettingsPropertyName="test_linq_2_tablasConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ciudad" Member="ciudad">
+    <Type Name="ciudad">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="ciudad_persona" Member="persona" ThisKey="id" OtherKey="ciudad" Type="persona" />
+    </Type>
+  </Table>
+  <Table Name="dbo.persona" Member="persona">
+    <Type Name="persona">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ciudad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ciudad_persona" Member="ciudad1" ThisKey="ciudad" OtherKey="id" Type="ciudad" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.listadoPersonas" Member="listadoPersonas">
+    <Type Name="listadoPersonas">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Ciudad" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

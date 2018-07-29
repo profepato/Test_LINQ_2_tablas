@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TestLinq">
+  <DataContextMoniker Name="/TestLinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="18a3a834-3f4f-4b9a-9a28-46c05ae2c0fb" absoluteBounds="1, 1.625, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/TestLinqDataContext/ciudad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="34c0337d-5483-4dfd-b052-5c07f77a86c5" absoluteBounds="1.0150000000000001, 2.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bc7bb1e1-082c-457f-b5f4-6079b18c1a3b" absoluteBounds="2.75, 3.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/TestLinqDataContext/persona" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4cd718b4-de1d-44f4-9cf4-c46c51158ad1" absoluteBounds="2.765, 4.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.8749995 : 2.81899251302083); (1.8749995 : 4.31814697265625); (2.75 : 4.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TestLinqDataContext/ciudad/ciudad_persona" />
+      <nodes>
+        <classShapeMoniker Id="18a3a834-3f4f-4b9a-9a28-46c05ae2c0fb" />
+        <classShapeMoniker Id="bc7bb1e1-082c-457f-b5f4-6079b18c1a3b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c629a189-2dc0-4044-9778-1e46d48586fe" absoluteBounds="5.125, 2.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/TestLinqDataContext/listadoPersonas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c7a983f-7fe0-45d8-b114-fb58841c7577" absoluteBounds="5.14, 2.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

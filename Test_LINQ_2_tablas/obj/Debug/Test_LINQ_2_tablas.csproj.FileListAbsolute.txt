@@ -1,0 +1,11 @@
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\bin\Debug\Test_LINQ_2_tablas.exe.config
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\bin\Debug\Test_LINQ_2_tablas.exe
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\bin\Debug\Test_LINQ_2_tablas.pdb
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.csprojAssemblyReference.cache
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.Form1.resources
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.Properties.Resources.resources
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.csproj.GenerateResource.cache
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.csproj.CoreCompileInputs.cache
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.exe
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.pdb
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.FormCiudad.resources
