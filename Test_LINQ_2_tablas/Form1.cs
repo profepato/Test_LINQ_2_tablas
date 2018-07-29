@@ -32,7 +32,7 @@ namespace Test_LINQ_2_tablas {
 
             
 
-            tblPersonas.DataSource = db.listadoPersonas;
+            // tblPersonas.DataSource = db.listadoPersonas;
             
         }
 
@@ -45,6 +45,11 @@ namespace Test_LINQ_2_tablas {
         private void ciudadToolStripMenuItem_Click(object sender, EventArgs e) {
             FormCiudad fc = new FormCiudad();
             fc.Show();
+        }
+
+        private void personaToolStripMenuItem_Click(object sender, EventArgs e) {
+            FormPersona fp = new FormPersona();
+            fp.Show();
         }
     }
 }

@@ -24,13 +24,14 @@
         /// </summary>
         private void InitializeComponent() {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtNombreCiudad = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.tblCiudad = new System.Windows.Forms.DataGridView();
             this.txtBuscarCiudad = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblCiudad)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +47,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Ciudad";
             // 
+            // txtNombreCiudad
+            // 
+            this.txtNombreCiudad.Location = new System.Drawing.Point(83, 26);
+            this.txtNombreCiudad.Name = "txtNombreCiudad";
+            this.txtNombreCiudad.Size = new System.Drawing.Size(122, 20);
+            this.txtNombreCiudad.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -54,13 +62,6 @@
             this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre:";
-            // 
-            // txtNombreCiudad
-            // 
-            this.txtNombreCiudad.Location = new System.Drawing.Point(83, 26);
-            this.txtNombreCiudad.Name = "txtNombreCiudad";
-            this.txtNombreCiudad.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreCiudad.TabIndex = 1;
             // 
             // btnRegistrar
             // 
@@ -81,8 +82,9 @@
             this.tblCiudad.Location = new System.Drawing.Point(245, 38);
             this.tblCiudad.Name = "tblCiudad";
             this.tblCiudad.ReadOnly = true;
-            this.tblCiudad.Size = new System.Drawing.Size(360, 159);
+            this.tblCiudad.Size = new System.Drawing.Size(360, 231);
             this.tblCiudad.TabIndex = 2;
+            this.tblCiudad.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblCiudad_CellClick);
             this.tblCiudad.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblCiudad_CellDoubleClick);
             // 
             // txtBuscarCiudad
@@ -95,9 +97,9 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(12, 85);
+            this.btnEliminar.Location = new System.Drawing.Point(518, 275);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(89, 23);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -105,19 +107,30 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(13, 115);
+            this.btnActualizar.Location = new System.Drawing.Point(12, 85);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.Size = new System.Drawing.Size(89, 23);
             this.btnActualizar.TabIndex = 5;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(12, 114);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(227, 23);
+            this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // FormCiudad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 211);
+            this.ClientSize = new System.Drawing.Size(619, 309);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.txtBuscarCiudad);
@@ -144,5 +157,6 @@
         private System.Windows.Forms.TextBox txtBuscarCiudad;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

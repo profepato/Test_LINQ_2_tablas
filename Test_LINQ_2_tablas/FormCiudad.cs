@@ -12,7 +12,7 @@ namespace Test_LINQ_2_tablas {
     public partial class FormCiudad : Form {
 
         private TestLinqDataContext db;
-        private int idEliminar;
+        private int idActualizar;
 
         public FormCiudad() {
             InitializeComponent();
@@ -26,6 +26,10 @@ namespace Test_LINQ_2_tablas {
     
             // Para que no se seleccione más de una fila
             tblCiudad.MultiSelect = false;
+
+            btnRegistrar.Enabled = true;
+            btnActualizar.Enabled = false;
+            btnEliminar.Enabled = false;
         }
 
         private void txtBuscarCiudad_TextChanged(object sender, EventArgs e) {
@@ -75,11 +79,15 @@ namespace Test_LINQ_2_tablas {
 
             txtNombreCiudad.Text = nombre;
 
-            idEliminar = int.Parse(idCiudad);
+            idActualizar = int.Parse(idCiudad);
+
+            btnActualizar.Enabled = true;
+            btnEliminar.Enabled = true;
+            btnRegistrar.Enabled = false;
         }
 
         private void btnActualizar_Click(object sender, EventArgs e) {
-            ciudad c = db.ciudad.Where(ciu => ciu.id == idEliminar).FirstOrDefault();
+            ciudad c = db.ciudad.Where(ciu => ciu.id == idActualizar).FirstOrDefault();
             c.nombre = txtNombreCiudad.Text;
 
             db.SubmitChanges();
@@ -88,6 +96,18 @@ namespace Test_LINQ_2_tablas {
             tblCiudad.DataSource = db.ciudad.Where(ci => ci.nombre.Contains(""));
 
             MessageBox.Show("Ciudad actualizada!");
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e) {
+            btnRegistrar.Enabled = true;
+            btnActualizar.Enabled = false;
+            btnEliminar.Enabled = false;
+
+            txtNombreCiudad.Text = "";
+        }
+
+        private void tblCiudad_CellClick(object sender, DataGridViewCellEventArgs e) {
+            btnEliminar.Enabled = true;
         }
     }
 }

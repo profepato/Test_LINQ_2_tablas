@@ -9,3 +9,4 @@ C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_
 C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.exe
 C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.pdb
 C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.FormCiudad.resources
+C:\Users\PREZ\source\repos\Test_LINQ_2_tablas\Test_LINQ_2_tablas\obj\Debug\Test_LINQ_2_tablas.FormPersona.resources

@@ -19,6 +19,7 @@
     <Type Name="listadoPersonas">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[ID ciudad]" Member="ID_ciudad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Ciudad" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </Type>
   </Table>

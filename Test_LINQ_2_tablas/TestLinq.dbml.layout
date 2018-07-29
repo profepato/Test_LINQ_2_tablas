@@ -21,10 +21,10 @@
         <classShapeMoniker Id="bc7bb1e1-082c-457f-b5f4-6079b18c1a3b" />
       </nodes>
     </associationConnector>
-    <classShape Id="c629a189-2dc0-4044-9778-1e46d48586fe" absoluteBounds="5.125, 2.125, 2, 1.3862939453125">
+    <classShape Id="2527f105-aa69-4251-9e97-e8f763abc92f" absoluteBounds="4.5, 1.5, 2, 1.5785953776041666">
       <DataClassMoniker Name="/TestLinqDataContext/listadoPersonas" />
       <nestedChildShapes>
-        <elementListCompartment Id="2c7a983f-7fe0-45d8-b114-fb58841c7577" absoluteBounds="5.14, 2.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="f06b40ce-2a45-451f-874c-a9903c0cafb0" absoluteBounds="4.515, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

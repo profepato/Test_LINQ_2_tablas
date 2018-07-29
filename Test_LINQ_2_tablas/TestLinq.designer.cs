@@ -366,6 +366,8 @@ namespace Test_LINQ_2_tablas
 		
 		private string _Nombre;
 		
+		private int _ID_ciudad;
+		
 		private string _Ciudad;
 		
 		public listadoPersonas()
@@ -400,6 +402,22 @@ namespace Test_LINQ_2_tablas
 				if ((this._Nombre != value))
 				{
 					this._Nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[ID ciudad]", Storage="_ID_ciudad", DbType="Int NOT NULL")]
+		public int ID_ciudad
+		{
+			get
+			{
+				return this._ID_ciudad;
+			}
+			set
+			{
+				if ((this._ID_ciudad != value))
+				{
+					this._ID_ciudad = value;
 				}
 			}
 		}
