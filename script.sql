@@ -30,6 +30,7 @@ CREATE VIEW listadoPersonas AS
 SELECT 
 	p.id AS 'ID',
 	p.nombre AS 'Nombre',
+	c.id AS 'ID ciudad',
 	c.nombre AS 'Ciudad'
 FROM 
 	persona p 
@@ -39,3 +40,5 @@ FROM
 USE master;
 DROP DATABASE test_linq_2_tablas;
 -- Eliminar base de datos
+
+DROP VIEW listadoPersonas;
